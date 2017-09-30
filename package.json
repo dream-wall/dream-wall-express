@@ -1,0 +1,28 @@
+{
+  "name": "dream-wall-brother",
+  "version": "1.0.1",
+  "description": "来到这里，每天早晨叫醒我们的将不是闹铃，而是梦想！",
+  "author": "banjuanshutong@126.com/savoygu@163.com",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "express": "^4.14.1",
+    "mongoose": "~4.11.0",
+    "cors": "~2.8.0",
+    "body-parser": "~1.16.0"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
