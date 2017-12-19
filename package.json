@@ -1,20 +1,32 @@
 {
-  "name": "dream-wall-brother",
+  "name": "dream-wall-express",
   "version": "1.0.1",
   "description": "来到这里，每天早晨叫醒我们的将不是闹铃，而是梦想！",
   "author": "banjuanshutong@126.com/savoygu@163.com",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "dependencies": {
-
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7"
   },
   "devDependencies": {
-    "express": "^4.14.1",
-    "mongoose": "~4.11.0",
-    "cors": "~2.8.0",
-    "body-parser": "~1.16.0"
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "pre-commit": "^1.2.2"
   },
   "engines": {
     "node": ">= 4.0.0",
