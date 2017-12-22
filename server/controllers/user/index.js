@@ -41,7 +41,7 @@ module.exports = {
       body.code = '02';
       body.result = e.message;
     } finally {
-      req.json(body);
+      res.json(body);
     }
   },
   getUsers: async (req, res, next) => {
@@ -60,7 +60,7 @@ module.exports = {
       body.code = '02';
       body.result = e.message;
     } finally {
-      req.json(body);
+      res.json(body);
     }
   },
   destoryUser: async (req, res, next) => {
@@ -76,7 +76,7 @@ module.exports = {
       body.code = '02';
       body.result = e.message;
     } finally {
-      req.json(body);
+      res.json(body);
     }
   }
 };
