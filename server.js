@@ -49,11 +49,9 @@ function onError (error) {
     case 'EACCES':
       console.error('requires elevated privileges');
       process.exit(1);
-      break;
     case 'EADDRINUSE':
       console.error('端口被占用!');
       process.exit(1);
-      break;
     default:
       throw error;
   }
